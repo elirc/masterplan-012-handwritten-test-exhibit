@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-10-03T22:31:09.020867+00:00",
+  "nodeVersion": "v22.16.0",
+  "nodeChecks": {
+    "command": "node --test",
+    "exitCode": 0,
+    "tests": 5,
+    "output": "TAP version 13\n# Subtest: value equality rejects a right-type wrong-value result\nok 1 - value equality rejects a right-type wrong-value result\n  ---\n  duration_ms: 6.9626\n  type: 'test'\n  ...\n# Subtest: runner catches individual failures and continues\nok 2 - runner catches individual failures and continues\n  ---\n  duration_ms: 7.2943\n  type: 'test'\n  ...\n# Subtest: shipping contract has independent boundary expectations\nok 3 - shipping contract has independent boundary expectations\n  ---\n  duration_ms: 1.308\n  type: 'test'\n  ...\n# Subtest: a strong assertion rejects a constant wrong candidate\nok 4 - a strong assertion rejects a constant wrong candidate\n  ---\n  duration_ms: 1.498\n  type: 'test'\n  ...\n# Subtest: exhibit exposes intentional failure and weak-test limitation\nok 5 - exhibit exposes intentional failure and weak-test limitation\n  ---\n  duration_ms: 1.9684\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 807.7695\n"
+  },
+  "browserChecks": {
+    "id": 12,
+    "status": "passed",
+    "checks": [
+      "No document horizontal overflow at 1200, 800, 500 and 320 CSS pixels",
+      "First Tab reveals skip link; Enter focuses main",
+      "Real runner displays three passes, intentional value failure and weak-test limitation"
+    ],
+    "browser": "Installed Microsoft Edge via Playwright",
+    "checkedAt": "2026-10-03T22:28:11.339251+00:00",
+    "consoleErrors": []
+  },
+  "scope": "Actual local reference verification. Learner stories are not implemented. Remote CI results are separate."
+}
