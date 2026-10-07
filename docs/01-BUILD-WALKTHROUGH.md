@@ -14,19 +14,19 @@ The smallest useful result answers this user need: A junior wants a small report
 
 Read shippingCost and its stated quantity rule: zero items and three or more cost zero; one or two cost five. Draw a table for zero through four before opening test/core.test.js. The important edge is two versus three. An implementation that always returns five appears plausible for one item but fails at that edge.
 
-**Pause and produce evidence:** shippingCost(2). Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
+**Pause and produce evidence:** shippingCost(3). Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
 
 ## Step 2: Build one useful assertion
 
 Read assertEqual and manually trace actual five against expected ninety-nine. The comparison must fail despite equal types. The resulting message gives both values. In a practice branch, try a type-only check and identify exactly which wrong candidate now slips through it.
 
-**Pause and produce evidence:** shippingCost(3). Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
+**Pause and produce evidence:** shippingCost(2). Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
 
 ## Step 3: Keep failures as data
 
 Follow runCases from a thrown Error to a result object. The UI chooses how to print that object; the core does not know about a pre element. Run a failed case followed by a passing case to establish continuation. An empty suite is permitted and returns an empty result list; it does not establish any coverage.
 
-**Pause and produce evidence:** assert fixture equals fixture. Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
+**Pause and produce evidence:** shippingCost(2). Predict the outcome, then compare it with the reference. In your notes, distinguish what the code says should happen from what you actually observed.
 
 ## Step 4: Review the tests themselves
 

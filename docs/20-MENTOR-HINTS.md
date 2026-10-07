@@ -104,9 +104,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Express expected failure behavior clearly.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Invoke a supplied function; distinguish no throw from a matching error; return a useful mismatch message.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Invoke a supplied function; distinguish no throw from a matching error; return a useful mismatch message. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: A nonthrowing candidate fails the assertion and the correct error passes.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: A nonthrowing candidate fails the assertion and the correct error passes. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose type-only or message matching. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -114,9 +114,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Represent an intentionally unrun case honestly.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Add an explicit skip field; bypass invocation for skipped cases; derive separate pass, fail and skip counts.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Add an explicit skip field; bypass invocation for skipped cases; derive separate pass, fail and skip counts. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: A skipped case is never reported as a pass.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: A skipped case is never reported as a pass. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose the skip-reason requirement. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -124,9 +124,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Make reports unambiguous.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Validate case names before execution; detect duplicates; explain setup errors separately from product failures.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Validate case names before execution; detect duplicates; explain setup errors separately from product failures. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: Two identical labels cannot hide which case failed.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: Two identical labels cannot hide which case failed. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose rejection or disambiguation policy. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -134,9 +134,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Teach that report order is part of readability.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Keep declared order; add a fixture with mixed outcomes; test output ordering without relying on wall-clock timing.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Keep declared order; add a fixture with mixed outcomes; test output ordering without relying on wall-clock timing. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: A failure does not reorder later cases or erase them.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: A failure does not reorder later cases or erase them. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose how the UI numbers cases. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -144,9 +144,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Run the same useful suite against two implementations.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Inject a shipping function into a tiny suite factory; supply reference and wrong candidates; compare failures.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Inject a shipping function into a tiny suite factory; supply reference and wrong candidates; compare failures. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: A constant-five candidate is rejected at the free boundary.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: A constant-five candidate is rejected at the free boundary. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose another plausible wrong candidate. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -154,9 +154,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Avoid interpreting no tests as coverage.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Detect an empty result set; show a clear no-cases message; keep it distinct from all passed.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Detect an empty result set; show a clear no-cases message; keep it distinct from all passed. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: Zero cases never displays a success claim about shipping behavior.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: Zero cases never displays a success claim about shipping behavior. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose warning placement. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -164,9 +164,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Handle JavaScript's unusual throw values.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Test string, Error and plain-object throws; choose safe formatting; keep runner continuation intact.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Test string, Error and plain-object throws; choose safe formatting; keep runner continuation intact. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: Report generation itself does not crash on the supplied throw fixtures.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: Report generation itself does not crash on the supplied throw fixtures. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose how much object detail to expose. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -174,9 +174,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Help learners critique an assertion before running it.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Record behavior called, expected-result source and rejected candidate; include one weak fixture-only example.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Record behavior called, expected-result source and rejected candidate; include one weak fixture-only example. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: Every claimed useful test names a concrete defect it can detect.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: Every claimed useful test names a concrete defect it can detect. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose a three-question rubric. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 
@@ -184,9 +184,9 @@ Look for a concrete connection to `public/core.js` or `public/app.js`. A strong 
 
 **First hint:** The desired improvement is “Prevent accidental false passes for promises.” Start by identifying which existing boundary already knows the necessary information. Do not copy that information into new state until you can explain why derivation is insufficient.
 
-**Second hint:** Follow this source-specific route: Supply a returning Promise in a scratch case; observe the synchronous runner's limit; either reject thenables or design a separate async contract.. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
+**Second hint:** Follow this source-specific route: Supply a returning Promise in a scratch case; observe the synchronous runner's limit; either reject thenables or design a separate async contract. Keep each stage independently inspectable. If a step requires a policy choice, write the choice before implementing it.
 
-**Third hint:** Your strongest completion evidence should establish: The guide never claims the current runner awaits asynchronous work.. Invent a plausible wrong implementation and make your example disagree with it.
+**Third hint:** Your strongest completion evidence should establish: The guide never claims the current runner awaits asynchronous work. Invent a plausible wrong implementation and make your example disagree with it.
 
 **Decision still left to you:** Choose rejection versus a separate future runner. The guide intentionally does not settle this. Evaluate your answer by clarity of the contract, consistency of the implementation and quality of verification, not by guessing the author's preferred wording.
 

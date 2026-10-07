@@ -6,8 +6,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 01: Add result totals
 
-**User need:** As a learner or user of Handwritten Test Exhibit, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Derive passed and failed counts from completed result rows rather than incrementing counters in multiple places.
 
 **Implementation plan:**
@@ -26,8 +24,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 02: Add a descriptive assertion label
-
-**User need:** As a learner or user of Handwritten Test Exhibit, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Supply a domain-specific message when the shipping boundary fails.
 
@@ -48,8 +44,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 03: Practice rejecting a boundary mutant
 
-**User need:** As a learner or user of Handwritten Test Exhibit, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Write a scratch candidate using greater-than three instead of greater-than-or-equal three.
 
 **Implementation plan:**
@@ -68,8 +62,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 04: Describe identity comparison
-
-**User need:** As a learner or user of Handwritten Test Exhibit, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Add a separate example that compares two distinct objects and explains the scalar-only contract.
 
@@ -90,8 +82,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 
 ## Story 05: Show only failed rows
 
-**User need:** As a learner or user of Handwritten Test Exhibit, I want this small improvement so the behavior is easier to use, explain or verify.
-
 **Feature boundary:** Add a UI filter after collecting all results; retain the full result array.
 
 **Implementation plan:**
@@ -110,8 +100,6 @@ These are new exercises beyond the finished reference. No story is marked comple
 **Stretch only after completion:** add one adversarial example that a plausible but incorrect solution would fail. Explain why that example is more informative than adding three ordinary examples.
 
 ## Story 06: Detect a vacuous test in review
-
-**User need:** As a learner or user of Handwritten Test Exhibit, I want this small improvement so the behavior is easier to use, explain or verify.
 
 **Feature boundary:** Write two short candidate tests, one meaningful and one fixture-only, with a reviewer checklist.
 

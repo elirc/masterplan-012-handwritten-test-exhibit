@@ -12,7 +12,7 @@ These are deliberately proposed defects for a scratch branch. They are not claim
 
 ### Worked diagnosis
 
-First state the expected contract: The handwritten runner invokes every case and records each pass or failure without stopping the exhibit. assertEqual uses Object.is for scalar equality; it is not a deep-equality library or an async runner. The sample intentionally contains a wrong expected value and a fixture-only assertion, so a green label alone is not treated as proof of meaningful coverage. Then create the smallest example from the experiment above. Compare the observed result with the contract before changing more code. The likely cause is at this boundary: **public/core.js: assertEqual owns equality.** Repair that boundary, rerun the example, and check one neighboring valid case so the repair does not merely special-case the chosen input.
+First restate the expected contract from the [concepts guide](02-CONCEPTS-AND-TRACES.md#the-exact-contract) in your own words. Then create the smallest example from the experiment above. Compare the observed result with the contract before changing more code. The likely cause is at this boundary: **public/core.js: assertEqual owns equality.** Repair that boundary, rerun the example, and check one neighboring valid case so the repair does not merely special-case the chosen input.
 
 The completed reasoning record is: symptom → contract violated → input that distinguishes hypotheses → owning line or rule → minimal repair → regression evidence. This is a worked diagnostic route; fill in your actual outputs when you run it. No invented console transcript is supplied.
 

@@ -6,9 +6,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 01: Add result totals
 
-**Hint 1 — ownership:** Begin from `runCases`. Derive passed and failed counts from completed result rows rather than incrementing counters in multiple places.
+**Hint 1 — ownership:** Begin from the results array rendered in `public/app.js`. Derive passed and failed counts from completed result rows rather than incrementing counters in multiple places.
 
-**Hint 2 — reasoning:** Revisit the decision “Make the assertion state the difference”. Ask yourself: What does this helper do with two distinct objects containing the same properties?
+**Hint 2 — reasoning:** Revisit the decision “Catch per case”. Ask yourself: How would you prove the case after a failure really ran?
 
 **Answer direction:** A defensible solution demonstrates this observable result: Totals match rows including an empty suite and a suite with two failures. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 
@@ -16,9 +16,9 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 02: Add a descriptive assertion label
 
-**Hint 1 — ownership:** Begin from `runCases`. Supply a domain-specific message when the shipping boundary fails.
+**Hint 1 — ownership:** Begin from the `message` parameter of `assertEqual`. Supply a domain-specific message when the shipping boundary fails.
 
-**Hint 2 — reasoning:** Revisit the decision “Catch per case”. Ask yourself: How would you prove the case after a failure really ran?
+**Hint 2 — reasoning:** Revisit the decision “Make the assertion state the difference”. Ask yourself: What does this helper do with two distinct objects containing the same properties?
 
 **Answer direction:** A defensible solution demonstrates this observable result: The message names the quantity and still includes actual and expected values. The exact code is not prescribed. If your change achieves that result by changing an unrelated original rule, revise either the implementation or the story contract explicitly.
 
@@ -26,7 +26,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 03: Practice rejecting a boundary mutant
 
-**Hint 1 — ownership:** Begin from `runCases`. Write a scratch candidate using greater-than three instead of greater-than-or-equal three.
+**Hint 1 — ownership:** Begin from the `count >= 3` comparison in `shippingCost`. Write a scratch candidate using greater-than three instead of greater-than-or-equal three.
 
 **Hint 2 — reasoning:** Revisit the decision “Demonstrate a weak green test”. Ask yourself: Which changed implementation would your proposed assertion detect?
 
@@ -36,7 +36,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 04: Describe identity comparison
 
-**Hint 1 — ownership:** Begin from `runCases`. Add a separate example that compares two distinct objects and explains the scalar-only contract.
+**Hint 1 — ownership:** Begin from the `Object.is` comparison in `assertEqual`. Add a separate example that compares two distinct objects and explains the scalar-only contract.
 
 **Hint 2 — reasoning:** Revisit the decision “Make the assertion state the difference”. Ask yourself: What does this helper do with two distinct objects containing the same properties?
 
@@ -46,7 +46,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 05: Show only failed rows
 
-**Hint 1 — ownership:** Begin from `runCases`. Add a UI filter after collecting all results; retain the full result array.
+**Hint 1 — ownership:** Begin from the results rendering in `public/app.js`. Add a UI filter after collecting all results; retain the full result array.
 
 **Hint 2 — reasoning:** Revisit the decision “Catch per case”. Ask yourself: How would you prove the case after a failure really ran?
 
@@ -56,7 +56,7 @@ There are intentionally no complete feature patches here. Use one hint, return t
 
 ## Story 06: Detect a vacuous test in review
 
-**Hint 1 — ownership:** Begin from `runCases`. Write two short candidate tests, one meaningful and one fixture-only, with a reviewer checklist.
+**Hint 1 — ownership:** Begin from the “Weak test: fixture checks itself” case in `exhibit`. Write two short candidate tests, one meaningful and one fixture-only, with a reviewer checklist.
 
 **Hint 2 — reasoning:** Revisit the decision “Demonstrate a weak green test”. Ask yourself: Which changed implementation would your proposed assertion detect?
 
